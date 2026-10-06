@@ -1,0 +1,13 @@
+import csv
+from pathlib import Path
+
+print(list(Path(".").rglob("*.csv")))
+p = Path("data/train.csv")
+print(p.exists())
+print(p.stem)
+
+print(p.suffix)
+
+folder = Path("day03")
+p = folder / "with_cabin.csv"
+print(p)
